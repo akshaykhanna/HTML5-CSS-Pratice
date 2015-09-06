@@ -1,0 +1,24 @@
+body
+{
+text-align:center;
+}
+#anim
+{
+display:block;
+margin:150px auto;
+background:pink;
+color:#ffffff;
+-webkit-border-radius:10px;
+opacity:0.6;
+width:120px;
+height:75px;
+-webkit-transition:-webkit-transform 2s, opacity 2s, background 2s, width 2s, height 2s;
+}
+#anim:hover
+{
+  -webkit-transform:rotate(360deg);
+  opacity:1;
+  background:orange;
+  width:400px;
+  height:110px;
+  }

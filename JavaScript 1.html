@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Java Script</title>
+</head>
+<body onLoad="alert('Goodbye !!');">
+<script type="text/javascript">
+<!--
+//comments are written written like this
+/* Multi line comments
+   are written like this */
+   document.write("Java Script works......... Woopie");/*this is computer program 
+statement & every statemnt ends with ';' semicolon. */
+var x=23;//assign variable with value 23
+document.write("\n"+x);
+var dec=2.4545;
+document.write("decimal no:"+dec); 
+var string=" String takes \"n\" no. of letters in it";
+document.write(" String var:"+string);
+var bool=true;
+var b=null;
+document.write(" Boolean var: "+bool);
+document.write(" Varaible holds: "+b);
+function first()
+{ 
+  alert("JS function");
+  }
+ function parameters(x)
+{
+  alert(" Taking parameter x var having a value="+x);
+}
+ 
+ function multiplePara(x,y)
+ {
+ alert("We can enter parameter 1 ="+x+"and paramter 2 ="+y);
+ }
+ 
+ function usingReturn(a,b)
+ {
+   var c=a+b;
+   return c;
+   }
+   
+ function doFirst()
+ {
+ document.write("<br/>This is first<br/>");
+ }
+ function doSecond()
+ {
+ doFirst();//calling doFirst funiction;
+ }
+ function math(a,b)
+ {
+ var c=a*b;
+ return c;
+ }
+ function check(a,b)
+ {
+ if(a>b)
+ document.write("Greater than<br/>");
+ else
+ document.write("Smaller tham<br/>");
+ }
+ 
+ function multiCheck()
+ { 
+  var letter='z';
+ switch(letter)
+  {
+  case 'A':
+  document.write("Apple");
+  break;
+  case 'B':
+  document.write("Ball");
+  break;
+  default:
+  document.write("Not on the list");
+  break;
+  }
+  }
+  for(x=0;x<5;x++)
+  {
+  document.write("For Loop <br/>");
+  }
+  var q=1
+  while(q<=10)
+  {
+   document.write("While Loop");
+   q++;
+} 
+s=1;
+do{
+s++;
+document.write(s+" Do while loop<br/>");
+}while(s<=5)
+  
+ doSecond();//calling function which in turns call another func
+ check(5,7);
+ document.write("<br/> Adding two no."+usingReturn(5,7));
+  document.write("<br/> product of 25 and 2 is "+math(25,2));
+  multiCheck();
+   parameters("Holi Hai"); 
+ parameters("2nd parameter");
+ parameters("3rd one ji");
+
+
+//-->
+</script>
+<form>
+<input type="button" value="Zara zara touc me" onclick="first()"/> 
+<input type="button" value="Event Handelrs" onclick="alert('Event Handler');">
+</form>
+<a href="http://brainbolts.in" OnMouseOver="alert('Maximise your brain');" OnMouseOut="alert('Minimize your brain');">Brain Bolts</a>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--  1st page created
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite</title>
+    
+    <style>
+        
+		
+		.background{
+            height:850px;
+           
+            border :2px solid black;
+            position: relative;
+        
+            
+        }
+		.background .bg{
+		background: url(img/img.jpg) repeat;
+		 opacity:.5;
+           filter: alpha(opacity=20);
+		     position: absolute;
+        z-index: -1;
+          top: 0;
+            bottom: 0;
+          left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+		}
+		}
+	 
+    </style>
+    </head>
+    <body> 
+        <div class="background">
+           <div class="bg"></div>
+        <div align="center" style="opacity:1.0;" >
+            <form method="post" action="validate.php">
+                <table cellpadding="20" cellspacing="1" border="0" width="70%">
+                    <tr><td colspan="4"></td></tr>
+                     <tr><td colspan="4"></td></tr>
+                     
+                    
+                    <tr><td colspan="4" align="center"><marquee><h2><b><i>Login HERE....</b></i></h2></marquee></td></tr>
+                <tr><td width="20%"></td><td><strong><font color="grey">Enter Your Username</font></strong></td><td><input type="text" name="txt_uid"></td><td width="20%"></td></tr>
+                <tr><td width="20%"></td><td><strong><font color="grey">Enter your Password</font></strong></td> <td><input type="password" name="txt_pass"></td><td width="20%"></td></tr>
+                <tr><td colspan="4" align="center"><input type="submit" value="SUBMIT"></td></tr>
+                    
+                </table>    
+            </form>
+            
+        
+            </div>
+        </div>
+    </body>
+</html>

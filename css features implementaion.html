@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<title>Cascading Style Sheet</title>
+<!-- For CSS 'style' tag is used along with attribute 'type'-->
+<style type="text/css">
+<!--tag|{property|value;}-->
+#Id1{border: 5px dotted black;
+	      position:absolute;
+		  top:15px;
+		  left:25px;
+		  }
+     #Id2{border: 4px dashed blue;
+	      position:absolute;
+		  top:65px;
+		  left:5px;
+		  }
+		  p > a{color:red; 
+	      font-size:40px;
+		  }
+		  #idA{font-size:30px;
+		  color:white;
+		  background-color:black;
+		  border:2px dotted blue;
+		       position:absolute;
+			   width:200px;
+			   height:100px;
+			   top:330px;
+			   left:1000px;
+			   }
+		    #idP{font-size:30px;
+			     background-color:yellow;
+				 position:relative;
+				 width:200px
+				 height:120px;
+				 top:1000px;
+				 left:600px;
+				 }
+				 
+		  p:first-letter{font-size:30px;
+		  color:green; font-weight:bold;}
+.redtext{color:red; background-color:yellow;}
+    .blacktext{color:black;
+       }	
+      h1{color:red;
+	  border-bottom-color:black;
+	  border-bottom-width:5px;
+	  border-bottom-style:dotted;
+	  padding-left:50px;
+	  margin-left:450px;
+	  margin-right:550px;
+	  
+	  }
+	  p{color:#085ad5; font-family:arial; line-height:180%;
+	  text-indent:70px;
+	  }
+	  ul{font-weight:bold;
+	  }
+	  ol{font-style:italic;font-color:red;
+	  }
+	h3{text-align:center; font-style:italic;
+	}
+	body{background-color:#ccffcc;
+	color:#339933;
+	background-image:url(bg.jpg);
+	background-repeat:no-repeat;
+	background-position: 50% 80px;
+	}
+	h2{background-color:orange;
+	padding:20px;
+	padding-left:450px;
+	border-color:red;
+	border-width:4px;
+	border-style:dashed;
+	}
+	h4{background-color:green;
+	color:yellow;
+	width:300px;
+	height:100px;
+	border: 10px solid  black;}
+	a:link{color:red; text-decoration:none;
+	}
+	a:visted{color:green; text-decoration:none;
+	}
+	a:hover{color:white; background-color:yellow; text-decoration:none;
+	}
+	a:active{color:white; background-color:red; text-decoration:underline;
+	}
+    table{border: 3px solid red;
+	margin-left:500px;}
+	tr{background-color:yellow;}
+	td{border: 3px dashed black;}
+	ul{list-style-image:url(bullets.gif);
+	}
+	h5, h6{color:blue;
+	}
+	span{background-color:black;
+	     color:white;
+		 }
+		#3{color:red;}
+	#MyId{
+	   color:black;
+	   }
+	
+</style>
+</head>
+<body>
+<h1 title="Properties:color,border,padding & margin"> This My heading</h1>
+<p title="CSS Properties: color font-family & pseudo elements(p:first-letter)">This is my paragraph
+
+Using rgb values for color change<br/>
+For Spacing out line use <span>proprety</span> line-hieht and value it in  %<br/>
+For Spacing out line use proprety line-hieht and value it in  %<br/>
+For Spacing out line use proprety line-hieht and value it in  %<br/>
+<a href="http://google.com" title="Property:child sectors">Link in pargarah</a>
+For Spacing out line use proprety line-hieht and value it in  %</p><br/>
+
+<ul class="redtext">
+ <li>font-weight:bold=csc</li>
+ </ul>
+ 
+ <ol title="Italic using css">
+ <li>font-style:italic</li>
+  </ol><br/>
+  <h3>Text Align</h3><br/>
+  
+  <h2 title="Padding(Used when you want place text at 
+  particular position)Border:can used 4 underline">Padding: distance b/w text and border</h2>
+<br/><h4 title="Properties:width and height">Messing with width and height</h4><br/>
+<a href="http://igyaan.in" id="3">3 States of Link:link visted hover active</a>
+<br/><br/>
+<hr/>
+<table title="property:border,tr color,td border" cellpadding="10px">
+<tr><td>Reliabilty</td><td>Reliabilty</td><td>Reliabilty</td></tr>
+<tr><td>Reliabilty</td><td>Reliabilty</td><td>Reliabilty</td></tr>
+</table>
+<br/> <br/>
+
+<ul title="Property:list-style-type,list-style-image">
+<li>Lag ja gale</li>
+<li>Pal bhar ke liye </li>
+<li>Happy</li>
+
+</ul>
+<br/>
+<h5 title="Applying properties to more than 1 tag at once">Element 1</h5>
+<h6 title="Applying properties to more than 1 tag at once">Element 2</h6><br/><br/>
+<p title="Property:Classes" class="redtext"> This pargraph would be red using red class properties</p>
+<p title="Property:Classes" class="blacktext"> This pargraph would be black  using black class properties</p>
+<div title="properties:Border, position, width,left" >This is div tag</div><br/><br/>
+<div id="Id1">Using ID's with div</div>
+<div id="Id2">Use # sign to use Id's for div </div>
+<div id="idA" title="Positioned using div">Apple change the world</div>
+<div id="idP" title="Relatuve Positioned using div">Position using div</div>
+<a href="http://google.com" id="MyId">Gooogele</a>
+
+<!--Now Creating forms to input from user-->
+<form>
+Username: <input type="text" name="username" size="80" maxlength="5" value="Enter username"/>
+<br/>
+Male <input type="radio" name="sex" value="msle" title="You can select only one in radio button">
+Female <input type="radio" name="sex" value="femsle">
+<br/>
+<p> Select any no. (0-4) from below check box</p>
+A<input type="checkbox" name="food" value="a">
+B<input type="checkbox" name="food" value="b">
+C<input type="checkbox" name="food" value="c">
+D<input type="checkbox" name="food" value="d">
+<br/>
+
+<P>Choose any one letter from drop down list</p>
+<select name="dropDownList">
+<option>A</option>
+<option>B</option>
+<option>C</option>
+<option>D</option>
+<option>E</option>
+</select>
+<br/>
+Below white box is text area
+<textarea name="ta">
+Enter ur text here
+</textarea><br/><br/>
+Password: <input type="password" name="pword"/><br/>
+Upload a file to website <input type="file" name="f"/>
+
+</form>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<htmL>
+<head>
+<title>Table Menu</title>
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<table border=1 cellpadding="10px" width="100%">
+<tr>
+<td><a href="http://brainbolts.in">Home</a></td>
+  <td><a href="http://brainbolts.in/android">Android crApps</a></td>
+<td><a href="http://brainbolts.in/electronic-circuits">Electronic Circuits</a></td>
+  <td><a href="http://brainbolts.in/linux-geeks">Linux Geeks</a></td>
+<td><a href="http://brainbolts.in/hijacking">Hijacking</a></td>
+<td><a href="http://brainbolts.in/about-us">About us</a></td>
+</tr>
+</table>
+<script type="text/javascript">
+ function time()
+ {
+ var d=new Date();
+ var hrs=d.getHours();
+ var min=d.getMinutes();
+ var sec=d.getSeconds();
+ var l="AM";
+ if(hrs>12)
+  {
+  l="PM";
+  hrs-=12;
+  }
+  document.write(hrs+":"+min+":"+sec+" "+l+"    ");
+ }
+ 
+ setInterval("time()", 1000);
+</script>
+</body>

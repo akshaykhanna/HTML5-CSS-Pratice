@@ -1,0 +1,36 @@
+<!document html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<title>Canvas text</title>
+</head>
+<body>
+<script type="text/javascript">
+function doFirst()
+{
+ var x=document.getElementById('canvas');
+  canvas=x.getContext('2d');
+  //creating text shadows
+  canvas.shadowOffsetX=7;
+  canvas.shadowOffsetY=7;
+  canvas.shadowBlur=4;
+  canvas.shadowColor='rgba(100,200,15,0.5)';
+  
+  //writting text using canvas
+  canvas.font="bold 30px  tahoma";
+  canvas.textAlign="end";
+  canvas.fillStyle="orange";
+  canvas.fillText("Brainbolts.in-maximise ur brain usage",600,100);
+
+}
+
+window.addEventListener("load",doFirst,false);
+</script>
+<section>
+ <canvas id="canvas" width="600" height="200">
+ If this message appears can please upgrade your browser to latest version of Google Chrome
+ </canvas>
+ </section>
+ </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>Vistor No.</title>
+</head>
+<body>
+<script type="text/javascript">
+var minP=0;
+ function time()
+ {
+ 
+ var d=new Date();
+ var hrs=d.getHours();
+ var min=d.getMinutes();
+ var sec=d.getSeconds();
+ if(min!=minP)
+ document.write("Time change"+min +" ");
+ 
+ var minP=d.getMinutes();
+ }
+ setInterval("time()", 1000);
+</script>
+</body>
+</html>

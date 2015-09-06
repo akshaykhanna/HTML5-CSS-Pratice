@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>JS object</title>
+<script type="text/javascript">
+
+/*Creating blue print of object*/
+function person(name,age)
+{
+ this.name=name;
+ this.age=age;
+ this.sc=senior;
+ }
+ 
+ function senior()
+ {
+   c=60-this.age;
+   return c; 
+ }
+ /*Creating Instance of Object*/
+ var aki=new person("Akshay Khanna",19);
+ var alia=new person("Alia Bhatt",20);
+ 
+ /*Creating object using object intialisers*/
+ var kat={name:"Katrina Kaif",age:28};
+ 
+ 
+ 
+ </script>
+ </head>
+
+ <body  onload="alert(alia.name);">
+ <form name="js">
+ Username<input type="text" name="user"/>
+ </form>
+ 
+ </form>
+
+<script type="text/javascript">
+<!--
+document.write(aki.name+"</br>");
+document.write(kat.name);
+document.write("<br/>Senior citizrn time left for "+alia.name+" is "+alia.sc());
+ 
+ //Creating Array
+ var people=new Array("Sanjay","Ajay","Vijay","Vj");
+ document.write("<br/>"+people[1]);
+ 
+ //Another method of Array
+ var letter=new Array(2);
+ letter[0]="a";
+ letter[1]="b";
+ document.write("<br/> letter is: "+letter[1]);
+ 
+ //Dynamic creation of Array
+ var dynamic=new Array();
+ dynamic[0]="jhulle";
+ dynamic[1]="lal";
+ document.write("<br/> David:"+dynamic[0]);
+ 
+ document.write("<br/> Lenght of people is: "+people.length);
+ var join=people.concat(dynamic);
+ for(i=0;i<join.length;i++)
+ document.write("<br/>"+join[i]);
+ var string=join.join(" - ");//converted Array into String using "join" method of Array.
+ document.write("<br/>"+string);
+ 
+ //pop removes last element from array
+ document.write("Length of join array"+join.length);
+ join.pop();
+  document.write("Length of join array"+join.length);
+  
+  //reverse array
+  document.write("<br/>Before reverse: "+join.join());
+  join.reverse();
+  document.write("<br/>After reverse: "+join.join());
+  
+  //push(add more elements to array)
+  join.push("Fool","Special 26");
+  document.write("<br/>After push: "+join.join());
+  
+  //sort  array
+  join.sort();
+  document.write("<br/>After sort: "+join.join());
+  
+  //prompt
+  var n=prompt("Enter your  name","................");
+  document.write("<br/>Helllo "+ n);
+  
+ //entering Array element using prompt
+ var p=new Array(3);
+ for(i=0;i<3;i++)
+ p[i]=prompt("Enter array element","");
+ document.write("Array is: "+p.join());
+ 
+ //Associate Array
+ var aa=new Array(2);
+ aa["name"]="Akshay Khanna";
+ aa["age"]="19";
+ document.write("<br/> Name: "+aa["name"]+" and age is: "+aa["age"]);
+ 
+ //Math function
+ document.write("<br/>Pie value: "+Math.PI);
+ document.write("<br/>Exponential e value: "+Math.E);
+ var s=prompt("Enter a no.","");
+ document.write("<br/>Square root of "+s+" is "+Math.sqrt(s));
+ 
+
+ 
+
+/-->
+</script>
+
+</body>
+</html>

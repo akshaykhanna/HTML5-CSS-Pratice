@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Time</title>
+</head>
+<body>
+<script type="text/javascript">
+ function time()
+ {
+ var d=new Date();
+ var hrs=d.getHours();
+ var min=d.getMinutes();
+ var sec=d.getSeconds();
+ var t=document.getElementById("time");
+ var l="AM";
+ if(hrs>12)
+  {
+  l="PM";
+  hrs-=12;
+  }
+  //document.write(hrs+":"+min+":"+sec+" "+l+"       ");
+  t.innerHTML=hrs+":"+min+":"+sec+" "+l+"       ";
+ }
+ 
+ setInterval("time()", 1000);
+</script>
+</body>
+<div id="time">00:00:00</div>
+</html>

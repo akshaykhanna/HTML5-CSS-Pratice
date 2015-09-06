@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>Contact us</title>
+ <script type="text/javascript">
+ function draw()
+ {
+   
+    var x=document.getElementById('canvas');
+  canvas=x.getContext('2d');
+   canvas.save();
+  canvas.font="bold 30px  tahoma";
+  canvas.textAlign="start";
+  canvas.fillStyle="blue";
+  canvas.fillText("Contact us",10,120);
+  canvas.rotate(-.5);
+  canvas.fillStyle="orange";
+  canvas.fillText("Contact us",10,120);
+ 
+   canvas.rotate(1.5);
+  canvas.fillStyle="green";
+  canvas.fillText("Contact us",120,60);
+
+   
+ }
+ window.addEventListener("load",draw,false);
+
+ </script>
+</head>
+
+<body>
+<section>
+ <canvas id="canvas" width="600" height="400">
+ Upgrade your browser to latest ver of Google Chrome
+ </canvas>
+</section>
+</body>
+
+</html>
+

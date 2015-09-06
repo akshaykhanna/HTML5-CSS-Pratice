@@ -1,0 +1,76 @@
+<html>
+<head>
+
+
+<script type="text/javascript">
+function dofirst()
+{
+alert("JS function");
+var button=document.getElementById("save");
+button.addEventListener("click",saveCrap,false);
+}
+function saveCrap()
+{
+var one=document.getElementById("one").value;
+var two=document.getElementById("two").value;
+var my=document.getElementById("mybox");
+my.innerHTML=two;
+sessionStorage.setItem(one,two);
+
+display(one);
+}
+function display(one)
+{
+var right=document.getElementById("rightbox");
+var two=sessionStorage.getItem(one);
+right.innerHTML="Name of key is: " +one+ " </br> Value: "+two;
+}
+window.addEventListener("load",dofirst,false);
+
+</script>
+<style type="text/css">
+#leftbox
+{
+ float:left;
+ padding:20px;
+ border:3px solid orange;
+ text-align:center;
+}
+
+#rightbox
+{
+float:left;
+width:250px;
+margin-left:20px;
+padding:20px;
+border:3px solid green;
+} 
+#mybox
+{
+float:left;
+width:250px;
+margin-left:20px;
+padding:20px;
+border:3px solid blue;
+} 
+</style>
+<title> Web Storage</title>
+</head>
+<body>
+<section id="leftbox">
+<form>
+<p>(Key) One: <input type="text" id="one"/></p>
+<p>(Value) Two: <textarea id="two"></textarea></p>
+<p><input type="button" value="Save" id="save"/></p>
+</form>
+</section>
+
+<section id="rightbox">
+Nothing to display
+</section>
+
+<section id="mybox">
+Blaaaaaaaank
+</section>
+</body>
+</html>
