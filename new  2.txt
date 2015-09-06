@@ -1,8 +1,0 @@
-<html>
-<head>
-<title>Canvass</title>
-<script Aki.js></script>
-</head>
-<body>
-<section>
-</html>
